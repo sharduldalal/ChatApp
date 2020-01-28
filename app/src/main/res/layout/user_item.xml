@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/profile_image"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/profile_image"
+        android:layout_toRightOf="@+id/profile_image"
+        android:text="username"
+        android:textSize="18sp"
+        android:textColor="@color/cardview_light_background"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/img_on"
+        android:src="@drawable/status"
+        android:layout_below="@+id/username"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_marginLeft="-5dp"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/img_off"
+        android:visibility="gone"
+        android:src="@drawable/status2"
+        android:layout_below="@+id/username"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_marginLeft="-5dp"
+        />
+
+    <!--<Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_marginLeft="100dp"
+        android:text=""/>to add a button for accept and decline chat request-->
+
+</RelativeLayout>
