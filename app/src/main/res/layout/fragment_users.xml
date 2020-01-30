@@ -7,21 +7,21 @@
 
     <ImageView
         android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_height="25dp"
         android:id="@+id/search_image"
         android:src="@drawable/ic_search"
-        android:background="#000000"
-        android:layout_marginBottom="0dp"/>
+        android:background="#000000" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
+
         android:layout_toRightOf="@+id/search_image"
         android:hint="Search ..."
         android:id="@+id/search_users"
         android:textColorHint="#fff"
-        android:background="#000000"/>
+        android:background="#000000"
+        android:textColor="#fff"/>
 
     <EditText
         android:layout_width="match_parent"
