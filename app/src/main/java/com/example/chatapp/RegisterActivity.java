@@ -86,6 +86,7 @@ public class RegisterActivity extends AppCompatActivity {
                     hashMap.put("username", username);
                     hashMap.put("imageURL", "default");
                     hashMap.put("status" , "offline");
+                    hashMap.put("search" , username.toLowerCase());
 
                     reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
@@ -104,7 +105,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                 } else {
 
-                    Toast.makeText(RegisterActivity.this, "You Can't Reagister Woth This Email" +
+                    Toast.makeText(RegisterActivity.this, "You Can't Register With This Email" +
                             " Or Password", Toast.LENGTH_LONG).show();
                 }
 

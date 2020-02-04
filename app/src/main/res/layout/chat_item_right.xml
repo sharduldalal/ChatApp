@@ -27,6 +27,16 @@
             android:textColor="#fff"
             android:padding="8dp"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_seen"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/show_message"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+
 
     </RelativeLayout>
 </RelativeLayout>
